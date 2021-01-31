@@ -3,13 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hackathon</title>
+        <title>САЯК Shop</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="./style/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="   crossorigin="anonymous"></script>
         <script>
             // You can also pass an optional settings object
             // below listed default settings
@@ -36,45 +37,57 @@
 
             });
         </script>
+         <link
+         rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+         crossorigin="anonymous"
+       />
+   
         
     </head>
 
     <body>
-        <div data-aos="fade-right" class="sidebar col-2 d-none d-lg-block">
+        <div data-aos="fade-right" class="sidebar col-lg-3 d-none d-lg-block">
             <div class="card col-10">
                 <h5 class="p-1">Contacts:</h5>
                 <div class="d-flex flex-wrap" >
-                    <span class="p-2"><img src="./img/instagram.png" alt=""> Instagram</span>
-                    <span class="p-2"><img src="./img/vk.png" alt=""> Vkontakte</span>
-                    <span class="p-2">+86(150)2169-6754</span>
+                    <span class="col-12 p-2"><img src="./img/instagram.png" alt=""> Instagram: telephone.kg</span>
+                    <span class="col-12 p-2"><img src="./img/vk.png" alt=""> Vkontakte: telephone@kg</span>
+                    <span class="col-12 p-2">+86(150)2169-6754</span>
+                    <button class='add-product btn btn-primary mb-3' >Добавить товар</button>
                 </div>
             </div>
         </div>
 
         <header data-aos="fade-in" data-aos-duration="1000" class="header mb-5" >
             <div id="navbar-bg" >
-                <div class="container pt-1">
+                <div class="container">
                         <div class="navbar">
                             <div data-aos="fade-down" class="navbar__left">
                                 <a href="#">
-                                    Junior Front-end Developer
+                                    <img style='width: 150px; height: auto' src='https://image.freepik.com/free-vector/mobile-store-logo_8050-35.jpg' />
+                                    Саяк Shop
                                 </a>
                             </div>
                             <div  class="navbar__right col-12 col-lg-5">
                                 <div class="hamburger-menu">
                                     <input type="checkbox" id="menu__toggle">
                                     <label for="menu__toggle" class="menu__btn">
-                                    <span></span>
-                                    </label>
-                                    <ul class="navbar__menu menu__box navbar__right__menu d-flex justify-content-between pt-3">
-                                    <li class="menu__item navbar__item">
-                                        <a href="./index.html" style="color: red;">Главная</a>
+                                    <span></span> 
+                                    </label> 
+                                    <ul class="navbar__menu menu__box navbar__right__menu d-flex justify-content-between"> 
+                                    <li class="menu__item navbar__item mx-2"> 
+                                        <a href="#" style="color: red;">Главная</a>
                                     </li>
-                                    <li class="menu__item navbar__item">
-                                        <a href="./content.html">Резюме</a>
+                                    <li class="menu__item navbar__item mx-2">
+                                        <a href="#">Доставка</a>
                                     </li>
-                                    <li class="menu__item navbar__item">
-                                        <a href="./projects.html">Проекты</a>
+                                    <li class="menu__item navbar__item mx-2">
+                                        <a href="#">Гарантия</a>
+                                    </li>
+                                    <li class="menu__item navbar__item mx-2">
+                                        <a href="#">Контакты</a>
                                     </li>
                                     </ul>
                                 </div>
@@ -85,71 +98,103 @@
 
             <div class="container pt-3">
                 <div class="card">
-                    <div class="row flex-wrap">
-                            <div class="header__desc p-5 col-12 col-md-5 text-center">
-                                    <p class="py-2 " data-aos="fade-in" data-aos-duration="1000" >My name is Nurba</p>
-                                    <h1 class="py-1 " data-aos="fade-right" data-aos-duration="1000" >HELLO!</h1>
-                                    <p class="py-2 " data-aos="fade-right" data-aos-duration="1000" >I'am available for work.</p>
-                                    <button data-aos="flip-right" data-aos-duration="1000" class="btn btn-primary col-12 py-2 order-btn">MY CV</button>
+                    <div class="row flex-wrap" >
+                            <div class="header__desc p-5 col-12 col-md-5 text-center"> 
+                                    <p class="py-2" data-aos="fade-in" data-aos-duration="1000" >Добро пожаловать </p>
+                                    <h2 class="py-1 " data-aos="fade-right" data-aos-duration="1000" >Мир смартфонов</h2>
+                                    <p class="py-2 " data-aos="fade-right" data-aos-duration="1000" >Нурбека и Аиды</p> 
+                                    <a href='#tovary' ><button  data-aos="flip-right" data-aos-duration="1000" class="btn btn-primary col-12 py-2 order-btn">Посмотреть товары</button></a>
                             </div>
                             <div class="col-12 col-md-7 text-center">
-                                    <img data-aos="fade-up" data-aos-duration="1000" id="car" class="img-fluid p-5 col-12 col-md-8" src="./img/IMG_5128.JPG" alt="">
+                                    <img data-aos="fade-up" data-aos-duration="1000" id="car"  class="img-fluid p-5 col-12 " src="https://telefon.kg/image/catalog/new/Phones/Xiaomi/Redmi%20Note%209T%205G/5.jpg" alt="">
                             </div>
                     </div>
                 </div>
 
-                <div data-aos="fade-down" data-aos-duration="2000" class="card-group d-flex flex-wrap text-center mt-5">
+                <!-- <div data-aos="fade-down" data-aos-duration="2000" class="card-group d-flex flex-wrap text-center mt-5">
                     <div data-aos="flip-right" data-aos-duration="2000" class="card mx-3">
                         <div class="card-body p-3" id="card-1">
-                            <h4>Frontend Software Engineer</h4>
+                            <h4>Почему стоит выбрать нас</h4>
                             <p> 
-                                Seeking an entry-level position with Company to use my skills in coding, troubleshooting complex problems, and assisting in the timely completion of projects.
+                                Друзья, планируете совершить покупку с максимальным комфортом,
+                                минимальными рисками и выгодной цене? Вы оказались в нужном месте,
+                                 в нужное время.
                             </p>
                         </div>
                     </div>
                     <div data-aos="flip-down" data-aos-duration="2000" class="card mx-3">
                         <div class="card-body" id="card-2">
-                            <h4>Academic Projects</h4>
-                            <p>Implemented the Job Searching Web Service with NodeJS, MongoDB, Angular 5, NGRX and Bootstrap. Integrated the user authentication with Github Oauth2 apps to support third-party accounts login.</p>
+                            <h4>Плюсы нашего магазина</h4>
+                            <p>Качественный товар, приемлемые цены, гарантия обслуживания 3 года на все товары.
+                                 Через нас вам будет удобно заказывать</p>
                         </div>
                     </div>
-                    <div data-aos="flip-left" data-aos-duration="2000" class="card mx-3">
+                    <div data-aos="flip-left" data-aos-duration="2000" class="card text-left mx-3">
                         <div class="card-body" id="card-3">
-                            <h4>Skills</h4>
-                            <p>HTML5, CSS3, JavaScript, Angular JS, Tools/Methodologies Git, Brackets, Eclipse, JIRA. Web Technologies HTML, CSS, XHTML, SOAP, XML Web. Database MySQL Others Adobe Photoshop CS6, Android SDK, MySQL.</p>
+                            <h4>Модельный ряд</h4>
+                            <p> 
+                                Ниже представлен наш модельный ряд:
+                            </p>
+                            <ul> 
+
+                                <li><img style='height: auto; width: 50px' src='./images/meizu logo 3-130x100.png' />Meizu</li>
+                                <li><img style='height: auto; width: 50px' src='./images/apple-130x100.png' />Apple</li>
+                                <li><img style='height: auto; width: 50px' src='./images/mi logo 2342-130x100.png' />Xiaomi</li>     
+                                <li><img style='height: auto; width: 50px' src='./images/lenovo logo 3-130x100.png' />Lenovo</li>
+                                <li><img style='height: auto; width: 50px' src='./images/oneplus3-130x100.png' />OnePlus</li>
+                                <li><img style='height: auto; width: 50px' src='./images/samsung logo-130x100.png' />Samsung</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-
-                
-
+                </div> -->
             </div>
         </header>
 
-        <section data-aos="fade-up" data-aos-duration="2000" class="features mt-5 text-center">
+        <section id='tovary' data-aos="fade-up" data-aos-duration="2000" class="features mt-5 text-center">
             <div class="features__darker">
-                <div class="container">
-                        <h2 data-aos="flip-right" data-aos-duration="1000" class="features__title p-5">About me</h2>
-                        <div class="features__block d-flex flex-wrap">
-                                <div data-aos="fade-right" data-aos-duration="2000" class="features__item col-lg-4">
-                                    <h4>Надежность</h4>
-                                    <p>Решаю задачи в точные сроки и в полном обьеме </p>
-                                </div>
-                                <div data-aos="fade-right" data-aos-duration="2000" class="features__item col-lg-4">
-                                    <h4>Fast learner</h4>
-                                    <p>Able to grasp new concepts quickly and efficiently.
-                                        I grasp new concepts and ideas quickly.
-                                        Able to master new skills quickly.</p>
-                                </div>
-                                <div data-aos="fade-right" data-aos-duration="2000" class="features__item col-lg-4">
-                                    <h4>Work principles</h4>
-                                    <p>I process and apply new skills and concepts quickly.
-                                        Superior capacity of understanding new concepts and applying them correctly.</p>
-                                </div>
+                <div class="p-5" >            
+                    <h4 >
+                        <input class="search-inp col-9" placeholder="Search">
+                        <h5 id='currentPage' > </h5>
+                    </h4>
+                    <div class="contacts-menu" style='display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;'>
+                    </div>
+                    <div class="card"> 
+                        <div class='container' >  
+                            <button class="prev-btn btn btn-primary">Prev</button>
+                            <button class="next-btn btn btn-primary">Next</button>
                         </div>
-                </div>  
+
+                </div>
+                </div>
+              
             </div>
         </section>
+
+        <div id="main-modal">
+            <div class="inner-modal">
+              <button class="close-btn">&#10006;</button>
+              <div class="inner-content">
+                <img id='uploaded-img'/>
+                        <input class='inputName col-12 m-1' type='text' placeholder="Название"/>
+                        <input class='inputNal col-12 m-1' type='text' placeholder="В наличии"/>
+                        <input class='inputSurname col-12 m-1' type='text' placeholder="Марка"/>
+                        <input class='inputTelephone col-12 m-1' type='text' placeholder="Телефон"/>
+                        <input class='inputSeller col-12 m-1' type='text' placeholder="Продавец"/>
+                        <input class='inputPhone col-12 m-1' type='text' placeholder="Цена"/>
+                        <input id='input-img' type='text' alt="Загрузить картинку"/>
+                        <button type="button" class="btn submit btn-outline-dark col-12 m-1">Submit</button>
+
+              </div>
+            </div>
+        </div>
+      
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.7893796595577!2d74.58995091590097!3d42.87728947915567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec8201bd287c9%3A0x3a3918ff550b0b9f!2s105%20Isanov%20St%2C%20Bishkek!5e0!3m2!1sen!2skg!4v1611895370476!5m2!1sen!2skg" class='col-12' height=400 frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
 
         <footer data-aos="fade-down" class="footer py-1" >
             <div class="container d-flex flex-wrap justify-content-around py-5">
@@ -160,7 +205,7 @@
                 </div>
                 
                 <div class="col-12 col-md-5" >
-                    <p class="col-12 col-md-10">Нурбекостан, город Нурбек</p>
+                    <p class="col-12 col-md-10">Кыргызстан Бишкек</p>
                     <p class="col-12 col-md-10">+1-(123)-123-123-123</p>
                     <p class="col-12 col-md-10">front-end@kg.mail</p>
                     <button class="btn btn-primary col-12 col-md-10">Перезвонить мне</button>
@@ -168,8 +213,6 @@
                 
             </div>
         </footer>
-
-        
 
         <div type="button" class="callback-bt">
             <div class="text-call">
@@ -182,5 +225,7 @@
         <script>
             AOS.init();
         </script>
+        <script src='./script/index.js' ></script>
+        <script src='./script/product.js' ></script>
     </body>
 </html>

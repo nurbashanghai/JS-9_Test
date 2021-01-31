@@ -1,8 +1,61 @@
-
-body{
-    font-family: 'Montserrat', sans-serif;
+ body{
+    font-family: 'Roboto', sans-serif;
     background-color: whitesmoke;
 }
+
+/* модалка */
+#main-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: none;
+    z-index: 1;
+}
+
+.inner-modal {
+width: 400px;
+height: 400px;
+background-color: #fff;
+border-radius: 5px;
+position: relative;
+top: 30%;
+transform: translateY(-50%);
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.close-btn {
+position: absolute;
+width: 35px;
+height: 35px;
+border-radius: 50%;
+font-size: 20px;
+background-color: transparent;
+color: rgb(230, 1, 1);
+line-height: 1.5;
+border: none;
+cursor: pointer;
+top: -2px;
+right: 1px;
+transition: 0.2s all linear;
+outline: none;
+}
+
+.close-btn:hover {
+color: red;
+}
+
+.inner-content {
+display: flex;
+flex-direction: column;
+}
+
+/*  */
 
 .sidebar{
     position: fixed;
@@ -11,16 +64,15 @@ body{
     left: 30px;
 }
 
-
 #navbar-bg{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color:black;
     width: 100%;
     border-bottom: 5px solid lightskyblue;
 }
 
 .navbar a{
-    color: white;
+    color: black;
 }
 
 .navbar__center{
@@ -55,20 +107,31 @@ h1{
 }
 
 .card-body h4{
-    font-size: 24px;
+    font-size: 35px;
 }
 
+.card-body p{
+    font-size: 15px;
+}
+
+.img-item{
+    width: 150px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .features{
-    background: url('../img/code.jpeg');
+    /* background: url('../img/code.jpeg'); */
+    background-color: white;
     background-size: cover;
-    height: 624px;
+    height: auto;
     color: white;
 }
 
 .features__darker{
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
 }
 
 
